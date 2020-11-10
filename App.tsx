@@ -71,7 +71,7 @@ const App = () => {
           break;
       }
     });
-  });
+  },[]);
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -88,6 +88,7 @@ const App = () => {
           <View style={styles.body}>
 
             <Button title="Press me!" onPress={() => {
+              // Would work only on IOS
               NativeModules.CalendarManager.addEvent(
                 'Birthday Party',
                 '4 Privet Drive, Surrey',
