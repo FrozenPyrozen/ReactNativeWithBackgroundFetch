@@ -21,6 +21,10 @@ import {
 } from 'react-native';
 import BackgroundFetch from "react-native-background-fetch";
 
+import ToastExample from './ToastExample';
+
+ToastExample.show('Awesome', ToastExample.SHORT);
+
 import {
   Header,
   LearnMoreLinks,
@@ -88,7 +92,6 @@ const App = () => {
           <View style={styles.body}>
 
             <Button title="Press me!" onPress={() => {
-              // Would work only on IOS
               NativeModules.CalendarManager.addEvent(
                 'Birthday Party',
                 '4 Privet Drive, Surrey',

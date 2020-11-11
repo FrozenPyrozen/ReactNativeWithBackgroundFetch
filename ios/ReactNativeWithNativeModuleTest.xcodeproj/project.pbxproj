@@ -14,6 +14,7 @@
 		2C8B4500255AAEE4002D0DFB /* RCTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B44FF255AAEE4002D0DFB /* RCTCalendarManager.m */; };
 		2C8B4507255AC938002D0DFB /* RCTBacgroundMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B4506255AC938002D0DFB /* RCTBacgroundMode.m */; };
 		2C8B450D255ACA38002D0DFB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8B450C255ACA38002D0DFB /* AVFoundation.framework */; };
+		2C8B4544255AE77B002D0DFB /* APPBackgroundMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B4543255AE77B002D0DFB /* APPBackgroundMode.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -58,6 +59,8 @@
 		2C8B4505255AC938002D0DFB /* RCTBacgroundMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTBacgroundMode.h; sourceTree = "<group>"; };
 		2C8B4506255AC938002D0DFB /* RCTBacgroundMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBacgroundMode.m; sourceTree = "<group>"; };
 		2C8B450C255ACA38002D0DFB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C8B4542255AE77B002D0DFB /* APPBackgroundMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPBackgroundMode.h; sourceTree = "<group>"; };
+		2C8B4543255AE77B002D0DFB /* APPBackgroundMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPBackgroundMode.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactNativeWithNativeModuleTest-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativeWithNativeModuleTest-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactNativeWithNativeModuleTest-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactNativeWithNativeModuleTest-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FE7D7B4E7311FA73E99213 /* libPods-ReactNativeWithNativeModuleTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeWithNativeModuleTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +187,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				2C8B4542255AE77B002D0DFB /* APPBackgroundMode.h */,
+				2C8B4543255AE77B002D0DFB /* APPBackgroundMode.m */,
 				2C8B4505255AC938002D0DFB /* RCTBacgroundMode.h */,
 				2C8B4506255AC938002D0DFB /* RCTBacgroundMode.m */,
 				2C8B44FE255AAEE4002D0DFB /* RCTCalendarManager.h */,
@@ -585,6 +590,7 @@
 				2C8B4500255AAEE4002D0DFB /* RCTCalendarManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				2C8B4544255AE77B002D0DFB /* APPBackgroundMode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
