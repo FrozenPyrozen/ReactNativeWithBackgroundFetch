@@ -1,5 +1,7 @@
 package com.reactnativewithnativemoduletest;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
@@ -13,6 +15,8 @@ import java.util.List;
 
 import com.reactnativewithnativemoduletest.CustomToastPackage;
 import com.reactnativewithnativemoduletest.CustomCalendarPackage;
+import com.reactnativewithnativemoduletest.BackgroungHeadlessJsModule;
+
 
 
 public class MainApplication extends Application implements ReactApplication {
@@ -32,6 +36,7 @@ public class MainApplication extends Application implements ReactApplication {
           // packages.add(new MyReactNativePackage());
           packages.add(new CustomToastPackage());
           packages.add(new CustomCalendarPackage());
+          packages.add(new BackgroungHeadlessJsPackage());
 
           return packages;
         }
@@ -50,6 +55,14 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+    // Intent service = new Intent(getApplicationContext(), MyTaskService.class);
+    // Bundle bundle = new Bundle();
+
+    // bundle.putString("foo", "bar");
+    // service.putExtras(bundle);
+
+    // getApplicationContext().startService(service);
+
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }

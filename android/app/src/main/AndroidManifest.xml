@@ -2,7 +2,7 @@
   package="com.reactnativewithnativemoduletest">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+   
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -21,6 +21,7 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+       <service android:name="com.reactnativewithnativemoduletest.MyTaskService" />
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 
