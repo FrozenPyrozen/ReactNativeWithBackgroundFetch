@@ -55,8 +55,6 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
-    // Intent service = new Intent(getApplicationContext(), MyTaskService.class);
-    // Bundle bundle = new Bundle();
 
     // bundle.putString("foo", "bar");
     // service.putExtras(bundle);
