@@ -1,10 +1,10 @@
-import { NativeModules } from 'react-native';
+import {NativeModules} from 'react-native';
 
 module.exports = async (taskData) => {
   let count = 1;
-  while(true) {
+  while (true) {
     count += 1;
     await NativeModules.BackgroungHeadlessJs.nativeWait();
-    console.log(`count:`, count);
+    console.log('count:', count);
   }
 };

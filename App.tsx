@@ -8,7 +8,7 @@
  * @format
  */
 
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -18,7 +18,6 @@ import {
   StatusBar,
   NativeModules,
   Button,
-  AppState,
 } from 'react-native';
 
 import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
@@ -38,7 +37,6 @@ declare const global: {HermesInternal: null | {}};
 // };
 
 const App = () => {
-  const appState = useRef(AppState.currentState);
   // useEffect(() => {
   //   BackgroundFetch.configure(
   //     {
