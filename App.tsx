@@ -104,7 +104,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    //NativeModules.BackgroungHeadlessJs.startService();
+    NativeModules.BackgroungHeadlessJs.startService();
   }, []);
 
   useEffect(() => {
@@ -125,7 +125,7 @@ const App = () => {
     if (appState.current.match(/background/) || nextAppState === 'background') {
       console.log('App has come to the background!');
 
-      NativeModules.BackgroungHeadlessJs.startService();
+      // NativeModules.BackgroungHeadlessJs.startService();
     }
 
     appState.current = nextAppState;
